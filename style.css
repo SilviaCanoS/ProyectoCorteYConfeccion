@@ -107,7 +107,8 @@ img{
 }
 
 .herramientas{
-    height: 12rem;
+    height: 15rem;
+    object-fit: cover;
 }
 
 .diseño_form{
