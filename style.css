@@ -1,0 +1,180 @@
+@media (min-width: 920px) {
+    .nombre{
+        font-size: 4rem;
+    }
+
+    nav{
+        min-width: 1114px;
+    }
+}
+
+@media (max-width: 920px) {
+    .nombre{
+        font-size: 2rem;
+        margin-top: 1rem;
+    }
+
+    .diseño_form{
+        margin-top: -.4rem;
+    }
+
+    .abajo{
+        margin-top: -1.25rem;
+    }
+}
+
+html, body{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'MuseoModerno', sans-serif;
+    min-width: 920px;
+}
+
+/*Barra de navegacion*/
+nav{
+    background-color: #D7B590;
+    height: 6rem;
+    padding-left: .5rem;
+    padding-right: .5rem;
+}
+
+.empresa{
+    max-height: 6rem;
+    margin-top: -.5rem;
+    display: flex;
+}
+
+.logo{
+    width: 5.5rem;
+    height: 5.5rem;
+    margin: .25rem;
+}
+
+.nombre{
+    color: #211a4d;
+}
+
+.nombre:hover{
+    color: #211a4d;
+}
+
+.menu{
+    color: #211a4d;
+    font-size: 3rem;
+    border-color: #211a4d;
+}
+
+.navMenu{
+    background-color: #D7B590;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.submenu{
+    background-color: #FAE4CD;
+    margin-top: 0;
+    text-align: center;
+}
+
+a:hover:not(.nombre), button:hover{
+    background-color: #FAE4CD;
+}
+
+#busqueda{
+    padding: 1rem 3rem;
+}
+
+.botonBuscar{
+    border: .1rem solid #615241;
+    color: #615241;
+}
+/*Barra de navegacion*/
+
+/*main*/
+main{
+    background-color: #FAE4CD;
+}
+
+#Formulario{
+    width: 60vw;
+    margin: auto;
+    min-width: 352px;
+}
+
+img{
+    width: 100%;
+    object-fit: contain;
+}
+
+.herramientas{
+    height: 12rem;
+    position: relative;
+}
+
+.diseño_form{
+    text-align: center;
+    background-image: url(Imagenes/TelaTextura.png);
+}
+
+h3{
+    font-size: 2rem;
+    margin-top: -.2rem;
+    margin-bottom: 0;
+}
+
+summary{
+    font-size: 1.3rem;
+    font-weight: 100;
+    margin-top: 1.5rem;
+    margin-bottom: .5rem;
+}
+
+.alinear{
+    width: 50%;
+    margin: auto;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    min-width: 319px;
+}
+
+label{
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+input{
+    background-color: #FAE4CD;
+    border-top: none;
+    border-right: none;
+    border-color: #cd966c;
+    font-family: 'MuseoModerno', sans-serif;
+    margin-top: .5rem;
+}
+
+.check{
+    display: flex;
+    width: 85%;
+    margin: auto;
+}
+
+.checkBox{
+    width: 3rem;
+    margin-top: 0;
+}
+
+.labelCheck{
+    font-size: .8rem;
+}
+
+.enviar{
+    font-size: 1rem;
+    font-weight: 600;
+    padding: .5rem;
+    width: 7rem;
+}
+
+input:hover:not(.cuadroBusqueda){
+    background-color: #D7B590;
+}
