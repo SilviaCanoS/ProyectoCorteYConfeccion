@@ -1,0 +1,147 @@
+html, body{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'MuseoModerno', sans-serif;
+    min-width: 920px;
+}
+
+/*Barra de navegacion*/
+nav{
+    background-color: #D7B590;
+    height: 6rem;
+    padding-left: .5rem;
+    padding-right: .5rem;
+}
+
+.empresa{
+    max-height: 6rem;
+    margin-top: -.5rem;
+    margin-left: .5rem;
+    display: flex;
+}
+
+.logo{
+    width: 5.5rem;
+    height: 5.5rem;
+    margin: .25rem;
+}
+
+img{
+    width: 100%;
+    object-fit: contain;
+}
+
+.nombre{
+    color: #211a4d;
+    font-size: 3rem;
+    margin-top: .5rem;
+}
+
+.nombre:hover{
+    color: #211a4d;
+}
+
+.carrito{
+    color: #211a4d;
+    font-size: 3rem;
+    border-color: #211a4d;
+    margin-right: 1rem;
+}
+
+.cuadroBusqueda{
+    height: 2.5rem;
+    margin-top: .45rem;
+}
+
+.botonBuscar{
+    margin-right: 1rem;
+}
+
+.botonBuscar:hover{
+    background-color: #FAE4CD;
+}
+/*Barra de navegacion*/
+
+/*main*/
+main{
+    background-color: #FAE4CD;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    text-align: center;
+}
+
+h2{
+    margin-bottom: 1rem;
+    font-size: 3rem;
+}
+
+.seccion{
+    padding: 1rem 2rem 1rem 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+    gap: 1rem;
+    max-width: 1400px;
+}
+
+.articulo{
+    background-color: whitesmoke;
+    width: 14rem;
+    text-align: center;
+    padding: .5rem;
+}
+
+.articulo:hover{
+    background-image: linear-gradient(black, white);
+}
+
+.foto{
+    width: 13rem;
+    margin: auto;
+}
+
+.ahorro{
+    background-color: red;
+    color: whitesmoke;
+    font-weight: bold;
+    letter-spacing: .3rem;
+    font-size: 1.1rem;
+}
+
+h5{
+    margin-top: .5rem;
+}
+
+p{
+    margin: 0;
+}
+
+.desc{
+    color: red;
+    font-size: 1.5rem;
+}
+
+.normal{
+    text-decoration: line-through;
+}
+
+.agregar{
+    width: 90%;
+    padding-bottom: .3rem;
+    margin: auto;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    background-color: #FAE4CD;
+    border: 2px solid #D7B590;
+    color: #211a4d;
+}
+
+button{
+    border: 1px solid #211a4d;
+}
+
+button:hover{
+    background-color: #D7B590;
+}
