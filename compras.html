@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xicomulco Compras</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="compras.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=MuseoModerno&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3d0f07b161.js" crossorigin="anonymous"></script>
+    <script src="compras.js" defer></script>
+</head>
+
+<body>
+    <nav class="navbar container-fluid">
+        <div class="empresa">
+            <div class="logo"><img src="Imagenes/Xicomulco.png" alt="Logo de Xicomulco"></div>
+            <a class="navbar-brand nombre" href="#">CREACIONES XICOMULCO</a>
+        </div>
+
+        <a href=""><i class="fa-solid fa-cart-shopping carrito"></i></a>
+    </nav>
+
+    <nav class="navbar container-fluid navInf">
+        <div class="nav-item dropdown">
+            <a href="#mujer" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Mujer
+            </a>
+            <ul class="dropdown-menu submenu">
+                <li><a href="#pantalonesShortsM" class="dropdown-item">Pantalones y Shorts</a></li>
+                <li><a href="#sudaderasSueteresChamarrasChalecosAbrigosM" class="dropdown-item">Sudaderas, Sueteres, Chamarras, Chalecos y Abrigos</a></li>
+                <li><a href="#blusasPlayerasM" class="dropdown-item">Blusas y Playeras</a></li>
+                <li><a href="#vestidosFaldasM" class="dropdown-item">Vestidos y Faldas</a></li>
+                <li><a href="#pijamasM" class="dropdown-item">Pijamas</a></li>
+            </ul>
+        </div>
+
+        <div class="nav-item dropdown">
+            <a href="#hombre" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Hombre
+            </a>
+            <ul class="dropdown-menu submenu">
+                <li><a href="#pantalonesBermudasH" class="dropdown-item">Pantalones y Bermudas</a></li>
+                <li><a href="#sudaderasSueteresChamarrasAbrigosChalecosH" class="dropdown-item">Sudaderas, Sueteres, Chamarras, Abrigos y Chalecos</a></li>
+                <li><a href="#trajesH" class="dropdown-item">Trajes</a></li>
+                <li><a href="#camisasPlayerasH" class="dropdown-item">Camisas y Playeras</a></li>
+                <li><a href="#pijamasH" class="dropdown-item">Pijamas</a></li>
+                
+            </ul>
+        </div>
+
+        <div class="nav-item dropdown">
+            <a href="#niños" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Niños y Niñas
+            </a>
+            <ul class="dropdown-menu submenu">
+                <li><a href="#a5a16" class="dropdown-item">Niñas 5 - 16 años</a></li>
+                <li><a href="#o5a16" class="dropdown-item">Niños 5 - 16 años</a></li>
+                <li><a href="#a2a4" class="dropdown-item">Niñas 2 - 4 años</a></li>
+                <li><a href="#o2a4" class="dropdown-item">Niños 2 - 4 años</a></li>
+            </ul>
+        </div>
+
+        <div class="nav-item dropdown">
+            <a href="#bebes" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Bebés 0 - 24 meses
+            </a>
+            <ul class="dropdown-menu submenu">
+                <li><a href="#conjuntosMamelucosB" class="dropdown-item">Conjuntos y Mamelucos</a></li>
+                <li><a href="#sueteresSudaderasChamarrasAbrigosChalecosB" class="dropdown-item">Suéteres, Sudaderas, Chamarras, Abrigos y Chalecos</a></li>
+                <li><a href="#pañalerosBodiesB" class="dropdown-item">Pañaleros y Bodies</a></li>
+                <li><a href="#pantalonesVestidosB" class="dropdown-item">Pantalones y Vestidos</a></li>
+                <li><a href="blusasPlayerasB" class="dropdown-item">Blusas y Playeras</a></li>
+            </ul>
+        </div>
+        
+        <form class="d-flex" role="search" id="busqueda">
+            <input class="form-control me-2 cuadroBusqueda" type="search" placeholder="Haz click para buscar" aria-label="Search">
+            <button class="btn botonBuscar" type="submit">Buscar</button>
+        </form>
+    </nav>
+
+    <main>
+        <div id="mujeres" class="seccion">
+            <h2>Mujeres</h2>
+            <h4 id="pantalonesShortsM">Pantalones y Shorts</h4>
+            <span class="botonIzq uno">◀</span>
+            <span class="botonDer uno">▶</span>
+            <div class="subseccion">
+                <div class="articulo">
+                    <div class="foto"><img src="Imagenes/SalsaParachute.jpg" alt=""></div>
+                    <h5>Salsa Parachute</h6>
+                    <p>$599</p>
+                    <p>Nombre creadora</p>
+                    <div class="agregar">
+                        <p>Agregar a mi carrito:</p>
+                        <div class="tallas">
+                            <button>Ch</button>
+                            <button>M</button>
+                            <button>G</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="articulo">
+                    <div class="foto"><img src="Imagenes/SalsaParachute.jpg" alt=""></div>
+                    <h5>Salsa Parachute</h6>
+                    <p>$599</p>
+                    <p>Nombre creadora</p>
+                    <div class="agregar">
+                        <p>Agregar a mi carrito:</p>
+                        <div class="tallas">
+                            <button>Ch</button>
+                            <button>M</button>
+                            <button>G</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="articulo">
+                    <div class="foto"><img src="Imagenes/SalsaParachute.jpg" alt=""></div>
+                    <h5>Salsa Parachute</h6>
+                    <p>$599</p>
+                    <p>Nombre creadora</p>
+                    <div class="agregar">
+                        <p>Agregar a mi carrito:</p>
+                        <div class="tallas">
+                            <button>Ch</button>
+                            <button>M</button>
+                            <button>G</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="articulo">
+                    <div class="foto"><img src="Imagenes/SalsaParachute.jpg" alt=""></div>
+                    <h5>Salsa Parachute</h6>
+                    <p>$599</p>
+                    <p>Nombre creadora</p>
+                    <div class="agregar">
+                        <p>Agregar a mi carrito:</p>
+                        <div class="tallas">
+                            <button>Ch</button>
+                            <button>M</button>
+                            <button>G</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="articulo">
+                    <div class="foto"><img src="Imagenes/SalsaParachute.jpg" alt=""></div>
+                    <h5>Salsa Parachute</h6>
+                    <p>$599</p>
+                    <p>Nombre creadora</p>
+                    <div class="agregar">
+                        <p>Agregar a mi carrito:</p>
+                        <div class="tallas">
+                            <button>Ch</button>
+                            <button>M</button>
+                            <button>G</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="articulo">
+                    <div class="foto"><img src="Imagenes/SalsaParachute.jpg" alt=""></div>
+                    <h5>Salsa Parachute</h6>
+                    <p>$599</p>
+                    <p>Nombre creadora</p>
+                    <div class="agregar">
+                        <p>Agregar a mi carrito:</p>
+                        <div class="tallas">
+                            <button>Ch</button>
+                            <button>M</button>
+                            <button>G</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="articulo">
+                    <div class="foto"><img src="Imagenes/SalsaParachute.jpg" alt=""></div>
+                    <h5>Salsa Parachute</h6>
+                    <p>$599</p>
+                    <p>Nombre creadora</p>
+                    <div class="agregar">
+                        <p>Agregar a mi carrito:</p>
+                        <div class="tallas">
+                            <button>Ch</button>
+                            <button>M</button>
+                            <button>G</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="articulo">
+                    <div class="foto"><img src="Imagenes/SalsaParachute.jpg" alt=""></div>
+                    <h5>Salsa Parachute</h6>
+                    <p>$599</p>
+                    <p>Nombre creadora</p>
+                    <div class="agregar">
+                        <p>Agregar a mi carrito:</p>
+                        <div class="tallas">
+                            <button>Ch</button>
+                            <button>M</button>
+                            <button>G</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="articulo">
+                    <div class="foto"><img src="Imagenes/SalsaParachute.jpg" alt=""></div>
+                    <h5>Salsa Parachute</h6>
+                    <p>$599</p>
+                    <p>Nombre creadora</p>
+                    <div class="agregar">
+                        <p>Agregar a mi carrito:</p>
+                        <div class="tallas">
+                            <button>Ch</button>
+                            <button>M</button>
+                            <button>G</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="articulo">
+                    <div class="foto"><img src="Imagenes/SalsaParachute.jpg" alt=""></div>
+                    <h5>Salsa Parachute</h6>
+                    <p>$599</p>
+                    <p>Nombre creadora</p>
+                    <div class="agregar">
+                        <p>Agregar a mi carrito:</p>
+                        <div class="tallas">
+                            <button>Ch</button>
+                            <button>M</button>
+                            <button>G</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <br>
+            <h4 id="sudaderasSueteresChamarrasChalecosAbrigosM">Sudaderas, Suéteres, Chamarras, Chalecos y Abrigos</h4>
+            <span class="botonIzq dos">◀</span>
+            <span class="botonDer dos">▶</span>
+            <div class="subseccion">
+                <div class="articulo">
+                    <div class="foto"><img src="Imagenes/SalsaParachute.jpg" alt=""></div>
+                    <h5>Salsa Parachute</h6>
+                    <p>$599</p>
+                    <p>Nombre creadora</p>
+                    <div class="agregar">
+                        <p>Agregar a mi carrito:</p>
+                        <div class="tallas">
+                            <button>Ch</button>
+                            <button>M</button>
+                            <button>G</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <br>
+            <h4 id="blusasPlayerasM">Blusas y Playeras</h4>
+            <span class="botonIzq tres">◀</span>
+            <span class="botonDer tres">▶</span>
+            <div class="subseccion">
+                <div class="articulo">
+                    <div class="foto"><img src="Imagenes/SalsaParachute.jpg" alt=""></div>
+                    <h5>Salsa Parachute</h6>
+                    <p>$599</p>
+                    <p>Nombre creadora</p>
+                    <div class="agregar">
+                        <p>Agregar a mi carrito:</p>
+                        <div class="tallas">
+                            <button>Ch</button>
+                            <button>M</button>
+                            <button>G</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <br>
+            <h4 id="vestidosFaldasM">Vestidos y Faldas</h4>
+            <span class="botonIzq cuatro">◀</span>
+            <span class="botonDer cuatro">▶</span>
+            <div class="subseccion">
+                <div class="articulo">
+                    <div class="foto"><img src="Imagenes/SalsaParachute.jpg" alt=""></div>
+                    <h5>Salsa Parachute</h6>
+                    <p>$599</p>
+                    <p>Nombre creadora</p>
+                    <div class="agregar">
+                        <p>Agregar a mi carrito:</p>
+                        <div class="tallas">
+                            <button>Ch</button>
+                            <button>M</button>
+                            <button>G</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <br>
+            <h4 id="pijamasM">Pijamas</h4>
+            <span class="botonIzq cinco">◀</span>
+            <span class="botonDer cinco">▶</span>
+            <div class="subseccion">
+                <div class="articulo">
+                    <div class="foto"><img src="Imagenes/SalsaParachute.jpg" alt=""></div>
+                    <h5>Salsa Parachute</h6>
+                    <p>$599</p>
+                    <p>Nombre creadora</p>
+                    <div class="agregar">
+                        <p>Agregar a mi carrito:</p>
+                        <div class="tallas">
+                            <button>Ch</button>
+                            <button>M</button>
+                            <button>G</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="seccion" id="hombres">
+            <h2>Hombres</h2>
+            <h4 id="pantalonesBermudasH">Pantalones y Bermudas</h4>
+            <span class="botonIzq seis">◀</span>
+            <span class="botonDer seis">▶</span>
+            <div class="subseccion">
+                <div class="articulo">
+                    <div class="foto"><img src="Imagenes/SalsaParachute.jpg" alt=""></div>
+                    <h5>Salsa Parachute</h6>
+                    <p>$599</p>
+                    <p>Nombre creadora</p>
+                    <div class="agregar">
+                        <p>Agregar a mi carrito:</p>
+                        <div class="tallas">
+                            <button>Ch</button>
+                            <button>M</button>
+                            <button>G</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <br>
+            <h4 id="sudaderasSueteresChamarrasChalecosAbrigosH">Sudaderas, Suéteres, Chamarras, Chalecos y Abrigos</h4>
+            <span class="botonIzq siete">◀</span>
+            <span class="botonDer siete">▶</span>
+            <div class="subseccion">
+                <div class="articulo">
+                    <div class="foto"><img src="Imagenes/SalsaParachute.jpg" alt=""></div>
+                    <h5>Salsa Parachute</h6>
+                    <p>$599</p>
+                    <p>Nombre creadora</p>
+                    <div class="agregar">
+                        <p>Agregar a mi carrito:</p>
+                        <div class="tallas">
+                            <button>Ch</button>
+                            <button>M</button>
+                            <button>G</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <br>
+            <span class="botonIzq ocho">◀</span>
+            <span class="botonDer ocho">▶</span>
+            <h4 id="camisasPlayerasH">Camisas y Playeras</h4>
+            <div class="subseccion">
+                <div class="articulo">
+                    <div class="foto"><img src="Imagenes/SalsaParachute.jpg" alt=""></div>
+                    <h5>Salsa Parachute</h6>
+                    <p>$599</p>
+                    <p>Nombre creadora</p>
+                    <div class="agregar">
+                        <p>Agregar a mi carrito:</p>
+                        <div class="tallas">
+                            <button>Ch</button>
+                            <button>M</button>
+                            <button>G</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <br>
+            <h4 id="trajesH">Trajes</h4>
+            <span class="botonIzq nueve">◀</span>
+            <span class="botonDer nueve">▶</span>
+            <div class="subseccion">
+                <div class="articulo">
+                    <div class="foto"><img src="Imagenes/SalsaParachute.jpg" alt=""></div>
+                    <h5>Salsa Parachute</h6>
+                    <p>$599</p>
+                    <p>Nombre creadora</p>
+                    <div class="agregar">
+                        <p>Agregar a mi carrito:</p>
+                        <div class="tallas">
+                            <button>Ch</button>
+                            <button>M</button>
+                            <button>G</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <br>
+            <h4 id="pijamasH">Pijamas</h4>
+            <span class="botonIzq diez">◀</span>
+            <span class="botonDer diez">▶</span>
+            <div class="subseccion">
+                <div class="articulo">
+                    <div class="foto"><img src="Imagenes/SalsaParachute.jpg" alt=""></div>
+                    <h5>Salsa Parachute</h6>
+                    <p>$599</p>
+                    <p>Nombre creadora</p>
+                    <div class="agregar">
+                        <p>Agregar a mi carrito:</p>
+                        <div class="tallas">
+                            <button>Ch</button>
+                            <button>M</button>
+                            <button>G</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="seccion" id="niños">
+            <h2>Niños y Niñas</h2>
+            <h4 id="a2a4">Niñas 2 a 4 años</h4>
+            <span class="botonIzq once">◀</span>
+            <span class="botonDer once">▶</span>
+            <div class="subseccion">
+                <div class="articulo">
+                    <div class="foto"><img src="Imagenes/SalsaParachute.jpg" alt=""></div>
+                    <h5>Salsa Parachute</h6>
+                    <p>$599</p>
+                    <p>Nombre creadora</p>
+                    <div class="agregar">
+                        <p>Agregar a mi carrito:</p>
+                        <div class="tallas">
+                            <button>2</button>
+                            <button>3</button>
+                            <button>4</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <br>
+            <h4 id="o2a4">Niños 2 a 4 años</h4>
+            <span class="botonIzq doce">◀</span>
+            <span class="botonDer doce">▶</span>
+            <div class="subseccion">
+                <div class="articulo">
+                    <div class="foto"><img src="Imagenes/SalsaParachute.jpg" alt=""></div>
+                    <h5>Salsa Parachute</h6>
+                    <p>$599</p>
+                    <p>Nombre creadora</p>
+                    <div class="agregar">
+                        <p>Agregar a mi carrito:</p>
+                        <div class="tallas">
+                            <button>2</button>
+                            <button>3</button>
+                            <button>4</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <br>
+            <h4 id="a5a16">Niñas 5 a 16 años</h4>
+            <span class="botonIzq trece">◀</span>
+            <span class="botonDer trece">▶</span>
+            <div class="subseccion">
+                <div class="articulo">
+                    <div class="foto"><img src="Imagenes/SalsaParachute.jpg" alt=""></div>
+                    <h5>Salsa Parachute</h6>
+                    <p>$599</p>
+                    <p>Nombre creadora</p>
+                    <div class="agregar">
+                        <p>Agregar a mi carrito:</p>
+                        <div class="tallas">
+                            <button>5-9</button>
+                            <button>10-13</button>
+                            <button>14-16</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <br>
+            <h4 id="o5a16">Niños 5 a 16 años</h4>
+            <span class="botonIzq catorce">◀</span>
+            <span class="botonDer catorce">▶</span>
+            <div class="subseccion">
+                <div class="articulo">
+                    <div class="foto"><img src="Imagenes/SalsaParachute.jpg" alt=""></div>
+                    <h5>Salsa Parachute</h6>
+                    <p>$599</p>
+                    <p>Nombre creadora</p>
+                    <div class="agregar">
+                        <p>Agregar a mi carrito:</p>
+                        <div class="tallas">
+                            <button>5-9</button>
+                            <button>10-13</button>
+                            <button>14-16</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="seccion" id="bebes">
+            <h2>Bebés 0 a 24 meses</h2>
+            <h4 id="conjuntosMamelucosB">Conjuntos y Mamelucos</h4>
+            <span class="botonIzq quince">◀</span>
+            <span class="botonDer quince">▶</span>
+            <div class="subseccion">
+                <div class="articulo">
+                    <div class="foto"><img src="Imagenes/SalsaParachute.jpg" alt=""></div>
+                    <h5>Salsa Parachute</h6>
+                    <p>$599</p>
+                    <p>Nombre creadora</p>
+                    <div class="agregar">
+                        <p>Agregar a mi carrito:</p>
+                        <div class="tallas">
+                            <button>0-8</button>
+                            <button>9-16</button>
+                            <button>17-24</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <br>
+            <h4 id="sueteresSudaderasChamarrasAbrigosChalecosB">Suéteres, Sudaderas, Chamarras, Abrigos y Chalecos</h4>
+            <span class="botonIzq diez6">◀</span>
+            <span class="botonDer diez6">▶</span>
+            <div class="subseccion">
+                <div class="articulo">
+                    <div class="foto"><img src="Imagenes/SalsaParachute.jpg" alt=""></div>
+                    <h5>Salsa Parachute</h6>
+                    <p>$599</p>
+                    <p>Nombre creadora</p>
+                    <div class="agregar">
+                        <p>Agregar a mi carrito:</p>
+                        <div class="tallas">
+                            <button>0-8</button>
+                            <button>9-16</button>
+                            <button>17-24</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <br>
+            <h4 id="pañalerosBodiesB">Pañaleros y Bodies</h4>
+            <span class="botonIzq diez7">◀</span>
+            <span class="botonDer diez7">▶</span>
+            <div class="subseccion">
+                <div class="articulo">
+                    <div class="foto"><img src="Imagenes/SalsaParachute.jpg" alt=""></div>
+                    <h5>Salsa Parachute</h6>
+                    <p>$599</p>
+                    <p>Nombre creadora</p>
+                    <div class="agregar">
+                        <p>Agregar a mi carrito:</p>
+                        <div class="tallas">
+                            <button>0-8</button>
+                            <button>9-16</button>
+                            <button>17-24</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <br>
+            <h4 id="pantalonesVestidosB">Pantalones y Vestidos</h4>
+            <span class="botonIzq diez8">◀</span>
+            <span class="botonDer diez8">▶</span>
+            <div class="subseccion">
+                <div class="articulo">
+                    <div class="foto"><img src="Imagenes/SalsaParachute.jpg" alt=""></div>
+                    <h5>Salsa Parachute</h6>
+                    <p>$599</p>
+                    <p>Nombre creadora</p>
+                    <div class="agregar">
+                        <p>Agregar a mi carrito:</p>
+                        <div class="tallas">
+                            <button>0-8</button>
+                            <button>9-16</button>
+                            <button>17-24</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <br>
+            <h4 id="blusasPlayerasB">Blusas y Playeras</h4>
+            <span class="botonIzq diez9">◀</span>
+            <span class="botonDer diez9">▶</span>
+            <div class="subseccion">
+                <div class="articulo">
+                    <div class="foto"><img src="Imagenes/SalsaParachute.jpg" alt=""></div>
+                    <h5>Salsa Parachute</h6>
+                    <p>$599</p>
+                    <p>Nombre creadora</p>
+                    <div class="agregar">
+                        <p>Agregar a mi carrito:</p>
+                        <div class="tallas">
+                            <button>0-8</button>
+                            <button>9-16</button>
+                            <button>17-24</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
