@@ -76,7 +76,7 @@ nav{
     text-align: center;
 }
 
-a:hover:not(.nombre), button:hover{
+a:hover:not(.nombre, .icono), button:hover{
     background-color: #FAE4CD;
 }
 
