@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compartir Clase</title>
+    <!-- CSS only -->
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="subirClase.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=MuseoModerno&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3d0f07b161.js" crossorigin="anonymous"></script>
+    <!--<script src="script.js" defer></script>-->
+</head>
+
+<body>
+    <nav class="navbar container-fluid">
+        <div class="empresa">
+            <div class="logo"><img src="Imagenes/Xicomulco.png" alt="Logo de Xicomulco"></div>
+            <a class="navbar-brand nombre" href="#">CREACIONES XICOMULCO</a>
+        </div>
+
+        <a class="icono" href=""><i class="fa-solid fa-photo-film"></i></a>
+    </nav>
+
+    <main>
+        <div id="Formulario">
+            <img src="Imagenes/HerramientasArriba.png" alt="Herramientas de costura" class="herramientas">
+            <div class="diseño_form">
+                <img src="Imagenes/Costura.png" alt="">
+                <h3>Comparte tu Clase con Nosotras</h3>
+
+                <form id="enviarDatos">
+                    <fieldset class="alinear">
+                        <label for="nombreClase">Nombre de la Clase: </label>
+                        <input id="nombreClase" name="nombreClase" type="text" autocapitalize="words" autofocus required>
+                    </fieldset>
+
+                    <fieldset class="alinear">
+                        <label for="descripcion">Descripción: </label>
+                        <textarea name="descripcion" id="descripcion" cols="20" rows="3" autocapitalize="sentences"></textarea>
+                    </fieldset>
+
+                    <fieldset class="alinear">
+                        <label for="autora">Autor/a: </label>
+                        <input id="autora" name="autora" type="text" autocomplete="name" autocapitalize="words" required>
+                    </fieldset>
+
+                    <fieldset class="alinear">
+                        <label for="celular">Telefono: </label>
+                        <input id="celular" name="celular" type="tel" autocomplete="tel">
+                    </fieldset>
+
+                    <fieldset class="alinear">
+                        <label for="correo">Correo electronico: </label>
+                        <input id="correo" name="correo" required type="email" autocomplete="email">
+                    </fieldset>
+
+                    <fieldset class="alinear">
+                        <label for="clase">Clase en Video: </label>
+                        <input id="clase" name="clase" required type="file" accept="Video/mp4">
+                    </fieldset>
+
+                    <br>
+                    <br>
+                    <fieldset class="check">
+                        <input id="aceptaTerminos" type="checkbox" name="aceptaTerminos" required class="checkBox">
+                        <label class="labelCheck" for="aceptaTerminos">Declaro haber leído y aceptar las condiciones 
+                            generales del programa y la normativa sobre protección</label>
+                    </fieldset>
+
+                    <br>
+                    <fieldset class="check">
+                        <input id="compartir" type="checkbox" name="compartir" required class="checkBox">
+                        <label class="labelCheck" for="compartir">Acepto que esta información sea compartida de mandera
+                            pública en esta página</label>
+                    </fieldset>
+                    
+                    <br>
+                    <input type="submit" class="enviar">
+                </form>
+
+                <img src="Imagenes/Costura.png" alt="Herramientas de costura">
+            </div>
+            <img src="Imagenes/HerramientasAbajo.png" alt="" class="herramientas abajo">
+        </div>
+    </main>
+</body>
+</html>
